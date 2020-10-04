@@ -1,0 +1,85 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.hero {
+  background-color: $color_hero-underlay;
+}
+.container__hero {
+  @extend %container;
+  @include CenteredFlex($wrap: wrap);
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;
+  // justify-content: center;
+
+  //   @extend %container;
+  //   widows: 100%;
+  //   height: 600px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  //   background-size: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/studio/hero/header_mobile.jpg");
+  background-color: $color_hero-underlay;
+  @include for-size(mobile-only) {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../images/studio/hero/header_mobile.jpg");
+  }
+
+  @include for-size(mobile) {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../images/studio/hero/header_mobile.jpg");
+  }
+
+  @include for-size(tablet) {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../images/studio/hero/header_tablet.jpg");
+  }
+
+  @include for-size(desktop) {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../images/studio/hero/header_desktop.jpg");
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.button__hero {
+  @extend %button;
+}

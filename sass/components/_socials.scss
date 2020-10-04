@@ -1,0 +1,18 @@
+@import "../utils/variables";
+.list_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   width: 206px;
+}
+.list_item--socials {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+// ====icons====
+
+.social_icon {
+  height: 20px;
+  width: 20px;
+}

@@ -1,0 +1,319 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.header {
+  min-width: calc(320px - 1rem);
+  width: 100%;
+  background-color: $color_header-background;
+  @include for-size(mobile-only) {
+    width: calc(100% - 16px);
+    position: fixed;
+    z-index: 2;
+    top: 0.5rem;
+  }
+  @include for-size(mobile) {
+    width: calc(100% - 16px);
+    position: fixed;
+    z-index: 2;
+    top: 0.5rem;
+  }
+}
+.container__header {
+  min-width: calc(320px - 1rem);
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  // z-index: 2;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 80px;
+  // background-color: pink;
+
+  @include for-size(mobile-only) {
+    width: 100%;
+    padding: 0px 1rem;
+  }
+
+  @include for-size(mobile) {
+    width: 100%;
+    padding: 0px 1rem;
+  }
+
+  @include for-size(tablet) {
+    width: $width_tablet;
+    padding: 0px 15px;
+  }
+
+  @include for-size(desktop) {
+    width: $width_desktop;
+    padding: 0px 215px;
+  }
+}
+.container--logo {
+  height: 100%;
+}
+.logo--header {
+  height: 100%;
+  flex-grow: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+  @include for-size(mobile-only) {
+    display: none;
+  }
+  @include for-size(mobile) {
+    display: none;
+  }
+}
+.menu-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-shown {
+  opacity: 1;
+  visibility: visible;
+}
+.btn-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.header__button--toggle-menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.btn--hide {
+  opacity: 1;
+  visibility: visible;
+}
+.btn--show {
+  opacity: 0;
+  visibility: hidden;
+}
+.menu--mobile {
+  background-color: $color_header-background;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity;
+  @include for-size(mobile-only) {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(100%);
+    display: block;
+    margin-left: -1rem;
+    width: 100%;
+    padding: 60px;
+    // height: 100%;
+  }
+
+  @include for-size(mobile) {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(100%);
+    display: block;
+    margin-left: -1rem;
+    width: 100%;
+    // outline: 1px solid tomato;
+    padding: 60px;
+    // height: 100%;
+  }
+  @include for-size(tablet) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+.header_navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  // background-color: lightgreen;
+  padding: 0px 0px;
+  @include for-size(mobile-only) {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(mobile) {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  @include for-size(tablet) {
+    padding-left: 88px; //for tablet
+  }
+
+  @include for-size(desktop) {
+    padding-left: 93px; //for desktop
+  }
+}
+.header__navigation__link {
+  position: relative;
+  // outline: 1px solid tomato;
+  @extend %link;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: $color_text_dark;
+  &.current::after,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: transparent;
+    transition-property: background-color;
+    transition: $transition_common;
+  }
+  &.current::after,
+  &:hover::after {
+    background-color: $color_active-1;
+  }
+
+  @include for-size(mobile-only) {
+    &:not(:last-child()) {
+      margin-bottom: 52px;
+    }
+    &.current::after,
+    &::after {
+      content: "";
+      bottom: -0.75rem;
+    }
+  }
+  @include for-size(mobile) {
+    &:not(:last-child()) {
+      margin-bottom: 52px;
+    }
+    &.current::after,
+    &::after {
+      content: "";
+      bottom: -0.75rem;
+    }
+  }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    &:not(:last-child()) {
+      margin-right: 50px;
+    }
+  }
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    &:not(:last-child()) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.header_contacts {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background-color: lightblue;
+  // outline: 1px solid tomato;
+  height: 100%;
+  padding: 0px 10px;
+
+  // width: 100%;
+  @include for-size(desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.header__contacts__link {
+  // @extend %link;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  @include for-size(mobile-only) {
+    &:not(:last-child()) {
+      margin-bottom: 1rem;
+    }
+  }
+  @include for-size(mobile) {
+    &:not(:last-child()) {
+      margin-bottom: 1rem;
+    }
+  }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0rem;
+    &:not(:last-child()) {
+      margin-bottom: 10px;
+    }
+  }
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    &:not(:last-child()) {
+      margin-right: 30px;
+    }
+  }
+}
+.link--grey {
+  text-decoration: none;
+  color: $color_text-grey;
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover,
+  &.current {
+    text-decoration: none;
+    color: $color_active-1;
+  }
+}
+
+.header__contacts__icon {
+  margin-right: 10px;
+  @include for-size(mobile-only) {
+    display: none;
+  }
+  @include for-size(mobile) {
+    height: 1rem;
+    width: 1rem;
+  }
+  @include for-size(tablet) {
+    height: 1rem;
+    width: 1rem;
+  }
+  @include for-size(desktop) {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+.centered {
+  @include CenteredFlex();
+}

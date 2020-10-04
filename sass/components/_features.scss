@@ -1,0 +1,90 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixins";
+.features {
+  @include for-size(mobile) {
+    display: flex;
+  }
+  @include for-size(tablet) {
+    display: flex;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+.container__features {
+  @extend %container;
+}
+.title--features {
+  //   display: none;
+}
+.grid__item--feature {
+  // position: relative;
+  //   height: 294px;
+  // width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include for-size(mobile) {
+    width: 100%;
+    &:not(:last-child()) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include for-size(tablet) {
+    width: calc((100% - 1 * 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: calc(30px);
+    }
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-bottom: 0px;
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.feature__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  margin: 0 auto 30px;
+  background: $color_features_icon-background;
+  border-radius: 4px;
+}
+.feature__icon {
+  width: 70px;
+  height: 70px;
+  // height: auto;
+}
+.feature__label {
+  display: block;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color_text-dark;
+}
+.feature__description {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  color: $color_text-grey;
+}

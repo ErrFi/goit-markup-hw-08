@@ -1,0 +1,201 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+@import "../utils/mixins";
+
+.footer {
+  background-color: $color_footer-background;
+}
+
+.container__footer {
+  @extend %container;
+  display: flex;
+  // height: 80px;
+  background-color: pink;
+  @include for-size(mobile-only) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 1rem;
+  }
+  @include for-size(mobile) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 1rem;
+  }
+  @include for-size(tablet) {
+    width: $width_tablet;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 21px 15px;
+  }
+  @include for-size(desktop) {
+    width: $width_desktop;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 60px 215px;
+  }
+}
+.footer__contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  // align-items: center;
+  // justify-content: space-between;
+  outline: 1px solid rgb(212, 134, 120);
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+    flex-direction: column;
+  }
+  @include for-size(tablet) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+  @include for-size(desktop) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+.footer__item--addr {
+  display: block;
+  width: 232px;
+
+  // font-size: 0px;
+  outline: 1px solid green;
+  background-color: grey;
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+    // display: flex;
+    // justify-content: center;
+    margin-right: 165px;
+  }
+  @include for-size(desktop) {
+    margin-right: 70px;
+  }
+}
+// .container--logo {
+//   width: 100%;
+// }
+.logo--footer {
+  margin-right: 0px;
+  width: 100%;
+}
+.footer__addr-item {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  @include for-size(mobile-only) {
+    justify-content: center;
+  }
+  @include for-size(mobile) {
+    justify-content: center;
+  }
+  @include for-size(tablet) {
+    justify-content: center;
+  }
+  @include for-size(desktop) {
+    justify-content: start;
+  }
+}
+.footer__addr__link {
+  @extend %link;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  /* or 24px */
+  letter-spacing: 0.03em;
+  color: $color_text-transp;
+}
+.footer__item--social {
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  // padding-bottom: 40px;
+
+  outline: 1px solid green;
+  background-color: grey;
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+  }
+  @include for-size(desktop) {
+  }
+}
+.footer_block_title {
+  display: flex;
+  // width: 100%;
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color_text-light;
+}
+.footer__socials {
+  // width: 100%;
+  padding: 0px;
+  color: $color_icon_footer;
+}
+.footer__link--social {
+  border-radius: 50%;
+  color: $color_icon_footer;
+  background-color: $color_footer_icon-background;
+}
+.footer__item--form {
+  display: block;
+  padding-top: 12px;
+  outline: 1px solid green;
+  background-color: grey;
+}
+.footer__form__content {
+  display: flex;
+  flex-wrap: nowrap;
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+  }
+  @include for-size(desktop) {
+  }
+}
+.footer__form__input--mail {
+  height: 50px;
+  width: 358px; //for desktop
+  margin-right: 12px; //for desktop
+  padding: 15px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.button--subscribe {
+  @extend %button;
+}
+
+.tmp {
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+  }
+  @include for-size(desktop) {
+  }
+}

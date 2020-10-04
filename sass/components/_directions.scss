@@ -1,0 +1,83 @@
+@import "../../sass/utils/variables";
+@import "../utils/placeholders";
+.directions {
+  @include for-size(mobile-only) {
+    display: none;
+  }
+  @include for-size(mobile) {
+    display: none;
+  }
+  @include for-size(tablet) {
+    display: flex;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+.container__directions {
+  @extend %container;
+  padding-top: 0px;
+}
+.grid__item--directions {
+  position: relative;
+  height: 294px;
+  // width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:nth-child(1) {
+    background-image: url(../images/studio/directions/DsktopApps.jpg);
+  }
+  &:nth-child(2) {
+    background-image: url(../images/studio/directions/MobileApps.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(../images/studio/directions/DesignSolutions.jpg);
+  }
+
+  @include for-size(mobile) {
+    width: 100%;
+    &:not(:last-child()) {
+      margin-bottom: 30px;
+    }
+  }
+  @include for-size(tablet) {
+    width: calc((100% - 2 * 30px) / 3);
+    // height: calc(((100% - 2 * 30px) / 3) / 1.25);
+    margin-bottom: 0px;
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+  @include for-size(desktop) {
+    // height: 294px;
+    width: calc((100% - 2 * 30px) / 3);
+    // height: calc(((100% - 2 * 30px) / 3) / 1.25);
+    margin-bottom: 0px;
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.direction__label {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color_text-light;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,183 @@
+@import "./sass/utils/fonts";
+@import "./sass/utils/variables";
+@import "./sass/utils/placeholders";
+@import "./sass/utils/mixins";
+@import "./sass/components/socials";
+@import "./sass/components/clients";
+@import "./sass/components/team";
+@import "./sass/components/directions";
+@import "./sass/components/features";
+@import "./sass/components/hero";
+@import "./sass/components/header";
+@import "./sass/components/logo";
+@import "./sass/components/footer";
+@import "./sass/components/portfolio";
+@import "./sass/components/modal";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 2px solid red;
+}
+body {
+  min-width: 320px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #555555;
+}
+h1 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 40px;
+
+  font-weight: 900;
+  // font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+
+  color: $color_text-light;
+  @include for-size(mobile-only) {
+    min-width: 300px;
+    font-size: 20px;
+    line-height: 162%;
+  }
+
+  @include for-size(mobile) {
+  }
+
+  @include for-size(tablet) {
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+  }
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.icon {
+  //   display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.section_title {
+  margin: 0px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-text-dark;
+  @include for-size(mobile) {
+    margin-bottom: 30px;
+  }
+  @include for-size(tablet) {
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
+}
+@import "./sass/components/list";
+
+.link {
+  @extend %link;
+}
+
+.link_social {
+  @extend %link;
+  @include CenteredFlex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition: $transition-common;
+  &:hover {
+    background-color: $color_active-1;
+    // fill: $color_active-2;
+    color: $color_active-2;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.grid__item {
+  display: flex;
+  flex-wrap: wrap;
+  //   height: 100px;
+  margin: 0px;
+  padding: 0px;
+  // background-color: $color_team-background;
+  // outline: 1px solid red;
+}
+
+.button__text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: currentColor;
+}
+
+.button__icon {
+  width: 1.5rem;
+}
+// == For Test ============================>
+:root {
+  --active-1: #2196f3;
+  --active-2: #ffffff;
+  --icon-header: #757575;
+  --icon-team: #afb1b8;
+  --icon-clients: #afb1b8;
+  --icon-footer: #ffffff;
+
+  --text-dark: #212121;
+  --text-grey: #757575;
+  --text-light: #ffffff;
+  --text-transp: rgba(255, 255, 255, 0.6);
+
+  --baner-underlay: #2f303a;
+  --header-background: #fff;
+  --portfolio-background: #fff;
+
+  --transition-duration: 500ms;
+}
+/* ===== Utility classes ===== */
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
