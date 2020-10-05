@@ -45,13 +45,13 @@
   }
 
   @include for-size(tablet) {
-    width: $width_tablet;
+    width: calc($width_tablet-1rem);
     height: 80px;
     padding: 0px 15px;
   }
 
   @include for-size(desktop) {
-    width: $width_desktop;
+    width: calc($width_desktop-1rem);
     height: 80px;
     padding: 0px 215px;
   }
