@@ -8,9 +8,106 @@
   </head>
   <body>
     <!-- == Header & Navigation  ================= -->
-    <button class="button--my2 btn-shown" btn-open-menu>open</button>
-    <button class="button--my btn-hidden" btn-close-menu>close</button>
-    <div class="button--my menu-hidden" toggle-menu>menu</div>
+    <header class="header">
+      <div class="container__header">
+        <!-- =======logo======= -->
+        <a href="#" class="logo logo--header">
+          <!-- <span class="button__label text--invisible">.</span> -->
+          <span class="logo__text text--blue"> Web</span>
+          <span class="logo__text text--dark"> Studio</span>
+        </a>
+        <div class="menu">
+          <nav class="header_navigation">
+            <a href="#" class="header__navigation__link current">
+              <span>Студия</span>
+            </a>
+            <a href="./portfolio.html" class="header__navigation__link">
+              <span>Портфолио</span>
+            </a>
+            <a href="#" class="header__navigation__link">
+              <span>Контакты</span>
+            </a>
+          </nav>
+          <ul class="header_contacts">
+            <li class="header__contacts__link">
+              <a href="#" class="link--grey centered">
+                <svg class="icon header__contacts__icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#envelope"
+                  ></use>
+                </svg>
+                <span> info@devstudio.com </span>
+              </a>
+            </li>
+            <li class="header__contacts__link">
+              <a href="#" class="link--grey centered">
+                <svg class="icon header__contacts__icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#smartphone"
+                  ></use>
+                </svg>
+                <span> +38 096 111 11 11 </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="burger--menu__btn" burger-menu-open>
+          <svg class="icon menu--icon">
+            <use href="./images/common/icons/social-icons.svg#menu-open"></use>
+          </svg>
+        </button>
+        <div class="menu--mobile is-hidden--menu" burger-menu>
+          <div class="menu--mobile__top-row">
+            <a href="#" class="logo logo--header">
+              <!-- <span class="button__label text--invisible">.</span> -->
+              <span class="logo__text text--blue"> Web</span>
+              <span class="logo__text text--dark"> Studio</span>
+            </a>
+            <button class="burger--menu__btn" burger-menu-close>
+              <svg class="icon menu--icon">
+                <use
+                  href="./images/common/icons/social-icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="header_navigation">
+            <a href="#" class="header__navigation__link current">
+              <span>Студия</span>
+            </a>
+            <a href="#" class="header__navigation__link">
+              <span>Портфолио</span>
+            </a>
+            <a href="#" class="header__navigation__link">
+              <span>Контакты</span>
+            </a>
+          </nav>
+          <ul class="header_contacts">
+            <li class="header__contacts__link">
+              <a href="#" class="link--grey centered">
+                <svg class="icon header__contacts__icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#envelope"
+                  ></use>
+                </svg>
+                <span> info@devstudio.com </span>
+              </a>
+            </li>
+            <li class="header__contacts__link">
+              <a href="#" class="link--grey centered">
+                <svg class="icon header__contacts__icon">
+                  <use
+                    href="./images/common/icons/social-icons.svg#smartphone"
+                  ></use>
+                </svg>
+                <span> +38 096 111 11 11 </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <script src="./js/script.js"></script>
     <script src="./js/my_burger_script.js"></script>
   </body>
 </html>

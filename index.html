@@ -8,33 +8,18 @@
   </head>
   <body>
     <!-- == Header & Navigation  ================= -->
+    <!-- == Header & Navigation  ================= -->
     <header class="header">
       <div class="container__header">
         <!-- =======logo======= -->
-        <button
-          class="header__button--toggle-menu btn--hide btn-hidden"
-          btn-close-menu
-        >
-          <svg class="icon form__icon">
-            <use href="./images/modal/icons-modal.svg#close"></use>
-          </svg>
-        </button>
-        <button
-          class="header__button--toggle-menu btn--show btn-shown"
-          btn-open-menu
-        >
-          <svg class="icon form__icon">
-            <use href="./images/modal/icons-modal.svg#check"></use>
-          </svg>
-        </button>
-        <a href="#" class="logo logo--header">
+        <a href="./index.html" class="logo logo--header">
           <!-- <span class="button__label text--invisible">.</span> -->
           <span class="logo__text text--blue"> Web</span>
           <span class="logo__text text--dark"> Studio</span>
         </a>
         <div class="menu">
           <nav class="header_navigation">
-            <a href="#" class="header__navigation__link current">
+            <a href="./index.html" class="header__navigation__link current">
               <span>Студия</span>
             </a>
             <a href="./portfolio.html" class="header__navigation__link">
@@ -67,12 +52,31 @@
             </li>
           </ul>
         </div>
-        <div class="menu--mobile menu-hidden" toggle-menu>
+        <button class="burger--menu__btn" burger-menu-open>
+          <svg class="icon menu--icon">
+            <use href="./images/common/icons/social-icons.svg#menu-open"></use>
+          </svg>
+        </button>
+        <div class="menu--mobile is-hidden--menu" burger-menu>
+          <div class="menu--mobile__top-row">
+            <a href="#" class="logo logo--header">
+              <!-- <span class="button__label text--invisible">.</span> -->
+              <span class="logo__text text--blue"> Web</span>
+              <span class="logo__text text--dark"> Studio</span>
+            </a>
+            <button class="burger--menu__btn" burger-menu-close>
+              <svg class="icon menu--icon">
+                <use
+                  href="./images/common/icons/social-icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
           <nav class="header_navigation">
-            <a href="#" class="header__navigation__link current">
+            <a href="./index.html" class="header__navigation__link current">
               <span>Студия</span>
             </a>
-            <a href="#" class="header__navigation__link">
+            <a href="./portfolio.html" class="header__navigation__link">
               <span>Портфолио</span>
             </a>
             <a href="#" class="header__navigation__link">

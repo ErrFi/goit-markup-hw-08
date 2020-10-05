@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
+    <!-- == Header & Navigation  ================= -->
     <header class="header">
       <div class="container__header">
         <!-- =======logo======= -->
-        <a href="#" class="logo logo--header">
+        <a href="./index.html" class="logo logo--header">
           <!-- <span class="button__label text--invisible">.</span> -->
           <span class="logo__text text--blue"> Web</span>
           <span class="logo__text text--dark"> Studio</span>
@@ -20,7 +21,7 @@
             <a href="./index.html" class="header__navigation__link">
               <span>Студия</span>
             </a>
-            <a href="#" class="header__navigation__link current">
+            <a href="./portfolio.html" class="header__navigation__link current">
               <span>Портфолио</span>
             </a>
             <a href="#" class="header__navigation__link">
@@ -50,12 +51,31 @@
             </li>
           </ul>
         </div>
-        <div class="menu--mobile">
+        <button class="burger--menu__btn" burger-menu-open>
+          <svg class="icon menu--icon">
+            <use href="./images/common/icons/social-icons.svg#menu-open"></use>
+          </svg>
+        </button>
+        <div class="menu--mobile is-hidden--menu" burger-menu>
+          <div class="menu--mobile__top-row">
+            <a href="#" class="logo logo--header">
+              <!-- <span class="button__label text--invisible">.</span> -->
+              <span class="logo__text text--blue"> Web</span>
+              <span class="logo__text text--dark"> Studio</span>
+            </a>
+            <button class="burger--menu__btn" burger-menu-close>
+              <svg class="icon menu--icon">
+                <use
+                  href="./images/common/icons/social-icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
           <nav class="header_navigation">
-            <a href="#" class="header__navigation__link">
+            <a href="./index.html" class="header__navigation__link">
               <span>Студия</span>
             </a>
-            <a href="#" class="header__navigation__link current">
+            <a href="./portfolio.html" class="header__navigation__link current">
               <span>Портфолио</span>
             </a>
             <a href="#" class="header__navigation__link">
@@ -206,6 +226,7 @@
         </ul>
       </div>
     </section>
+    <script src="./js/my_burger_script.js"></script>
   </body>
 </html>
 
