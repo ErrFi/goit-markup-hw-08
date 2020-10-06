@@ -215,6 +215,9 @@
     width: 358px; //for desktop
     margin-right: 12px; //for desktop
   }
+  &::placeholder {
+    color: $color_text-grey;
+  }
 }
 .button--subscribe {
   @extend %button;

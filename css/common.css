@@ -1893,6 +1893,10 @@
   }
 }
 
+.footer__form__input--mail::placeholder {
+  color: #757575;
+}
+
 /* fonts to use */
 @font-face {
   font-family: "Raleway";
