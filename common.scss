@@ -21,10 +21,10 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 body {
-  min-width: 320px;
+  min-width: calc(320px - 1rem);
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -107,6 +107,8 @@ img {
 
 .link {
   @extend %link;
+  transition-property: color;
+  transition: $transition-common;
 }
 
 .link_social {
@@ -120,7 +122,6 @@ img {
   transition: $transition-common;
   &:hover {
     background-color: $color_active-1;
-    // fill: $color_active-2;
     color: $color_active-2;
   }
 }
@@ -151,6 +152,7 @@ img {
 
 .button__icon {
   width: 1.5rem;
+  height: 1.5rem;
 }
 // == For Test ============================>
 :root {
@@ -169,6 +171,9 @@ img {
   --baner-underlay: #2f303a;
   --header-background: #fff;
   --portfolio-background: #fff;
+
+  --width_desktop: 1600px;
+  --width_tablet: 768px;
 
   --transition-duration: 500ms;
 }

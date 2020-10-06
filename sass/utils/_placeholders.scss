@@ -7,22 +7,24 @@
   padding: 60px 15px;
 
   @include for-size(mobile-only) {
-    width: 100%;
-    padding: 0px 1rem;
+    // width: 100%;
+    padding: 60px 15px;
   }
 
   @include for-size(mobile) {
-    width: 100%;
+    // width: 100%;
     padding: 60px 15px;
   }
 
   @include for-size(tablet) {
-    width: calc($width_tablet-1rem);
+    max-width: $width_tablet;
+    // width: 100%;
     padding: 60px 15px;
   }
 
   @include for-size(desktop) {
-    width: calc($width_desktop-1rem);
+    max-width: $width_desktop;
+    // width: 100%;
     padding: 94px 215px;
   }
 }
@@ -32,6 +34,7 @@
   list-style: none;
 }
 %grid {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -54,6 +57,7 @@
 
   &:hover {
     color: $color_active-2;
+    background-color: $color_button-background;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
   }
 }
@@ -61,6 +65,8 @@
 %link {
   text-decoration: none;
   color: currentColor;
+  // transition-property: color;
+  // transition-duration: $transition-common;
   &:visited {
     text-decoration: none;
     color: inherit;

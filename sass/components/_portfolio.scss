@@ -6,14 +6,32 @@
 .portfolio {
   width: 100%;
   background-color: $color_portfolio-background;
+  @include for-size(mobile-only) {
+    padding-top: calc(60px);
+  }
+  @include for-size(mobile) {
+    padding-top: calc(60px);
+  }
 }
 .container__portfolio {
   @extend %container;
-  //   height: 200px;
+  @include for-size(mobile-only) {
+  }
+  @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+  }
+  @include for-size(desktop) {
+  }
 }
 .grid--filters {
+  // @extend %list;
   @extend %grid;
   justify-content: center;
+  // padding-top: 120px;
+  @include for-size(mobile-only) {
+    margin-bottom: 40px;
+  }
   @include for-size(mobile) {
     margin-bottom: 40px;
   }
@@ -21,6 +39,7 @@
     margin-bottom: 30px;
   }
   @include for-size(desktop) {
+    // padding-top: 94px;
     margin-bottom: 50px;
   }
 }
@@ -29,14 +48,31 @@
     margin-right: 8px;
   }
 }
-.link__portfolio {
-  @extend %link;
-}
+
 .button__portfolio--filter {
+  @extend %link;
   @extend %button;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
   width: auto;
+  margin-bottom: 1rem;
   padding-left: 22px;
   padding-right: 22px;
+  border-radius: 4px;
+
+  color: $color_active-2;
+  background-color: #f5f4fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: box-shadow;
+  transition: $transition-common;
+
+  &:hover {
+    color: $color_active-2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+  }
 }
 .grid--galery {
   justify-content: center;
@@ -50,12 +86,14 @@
 }
 .grid__item--galery {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
   height: 404px;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @include for-size(mobile-only) {
-    width: 100%;
+    width: 450px;
     margin: 0px;
     &:not(:last-child()) {
       margin-bottom: 30px;
@@ -63,7 +101,6 @@
   }
 
   @include for-size(mobile) {
-    max-width: 450px;
     width: 100%;
     margin: 0px auto;
     &:not(:last-child()) {
@@ -111,11 +148,15 @@
   border: none;
 }
 .item__title {
+  margin-top: 0px;
   margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   color: $color_text-dark;
+  @include for-size(tablet) {
+    font-size: 16px;
+  }
 }
 .item__description {
   font-weight: normal;
@@ -132,7 +173,7 @@
   top: 0;
   left: 0;
   transform: translatey(100%);
-  width: 370px;
+  // width: 370px;
   height: 294px;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);

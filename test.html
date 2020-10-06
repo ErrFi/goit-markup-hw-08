@@ -7,106 +7,112 @@
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
-    <!-- == Header & Navigation  ================= -->
-    <header class="header">
-      <div class="container__header">
-        <!-- =======logo======= -->
-        <a href="#" class="logo logo--header">
-          <!-- <span class="button__label text--invisible">.</span> -->
-          <span class="logo__text text--blue"> Web</span>
-          <span class="logo__text text--dark"> Studio</span>
-        </a>
-        <div class="menu">
-          <nav class="header_navigation">
-            <a href="#" class="header__navigation__link current">
-              <span>Студия</span>
-            </a>
-            <a href="./portfolio.html" class="header__navigation__link">
-              <span>Портфолио</span>
-            </a>
-            <a href="#" class="header__navigation__link">
-              <span>Контакты</span>
-            </a>
-          </nav>
-          <ul class="header_contacts">
-            <li class="header__contacts__link">
-              <a href="#" class="link--grey centered">
-                <svg class="icon header__contacts__icon">
-                  <use
-                    href="./images/common/icons/social-icons.svg#envelope"
-                  ></use>
-                </svg>
-                <span> info@devstudio.com </span>
-              </a>
-            </li>
-            <li class="header__contacts__link">
-              <a href="#" class="link--grey centered">
-                <svg class="icon header__contacts__icon">
-                  <use
-                    href="./images/common/icons/social-icons.svg#smartphone"
-                  ></use>
-                </svg>
-                <span> +38 096 111 11 11 </span>
-              </a>
-            </li>
-          </ul>
+    <!-- ===== footer: contacts, social links & subscribe ====== -->
+    <footer class="footer">
+      <div class="container__footer">
+        <div class="footer__contacts">
+          <address class="footer__item--addr" id="contacts">
+            <ul class="list" id="contacts">
+              <!-- logo -->
+              <li class="list_item footer__addr-item logo--footer">
+                <a href="#" class="logo logo--footer">
+                  <!-- <span class="button__label text--invisible">.</span> -->
+                  <span class="logo__text text--blue"> Web</span>
+                  <span class="logo__text text--light"> Studio</span>
+                </a>
+              </li>
+              <!-- address -->
+              <li class="footer__addr-item">
+                <a class="footer__addr__link" href="./index.html">
+                  <span class="addr-text">г. Киев, пр-т Леси Украинки, 26</span>
+                </a>
+              </li>
+              <!-- e-mail -->
+              <li class="footer__addr-item">
+                <a class="footer__addr__link" href="./index.html">
+                  <span class="addr-text">info@example.com</span>
+                </a>
+              </li>
+              <!-- phone -->
+              <li class="footer__addr-item">
+                <a class="footer__addr__link" href="./index.html">
+                  <span class="addr-text">+38 099 111 11 11</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div class="footer__item--social">
+            <h3 class="footer_block_title">присоединяйтесь</h3>
+            <div class="footer__socials">
+              <ul class="list list_social">
+                <li class="list_item list_item--socials">
+                  <a
+                    href="./index.html"
+                    class="link_social footer__link--social"
+                  >
+                    <svg class="icon social_icon">
+                      <use
+                        href="./images/common/icons/social-icons.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list_item list_item--socials">
+                  <a href="#" class="link_social footer__link--social">
+                    <svg class="icon social_icon">
+                      <use
+                        href="./images/common/icons/social-icons.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list_item list_item--socials">
+                  <a href="#" class="link_social footer__link--social">
+                    <svg class="icon social_icon">
+                      <use
+                        href="./images/common/icons/social-icons.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="list_item list_item--socials">
+                  <a href="#" class="link_social footer__link--social">
+                    <svg class="icon social_icon">
+                      <use
+                        href="./images/common/icons/social-icons.svg#linkedin"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <button class="burger--menu__btn" burger-menu-open>
-          <svg class="icon menu--icon">
-            <use href="./images/common/icons/social-icons.svg#menu-open"></use>
-          </svg>
-        </button>
-        <div class="menu--mobile is-hidden--menu" burger-menu>
-          <div class="menu--mobile__top-row">
-            <a href="#" class="logo logo--header">
-              <!-- <span class="button__label text--invisible">.</span> -->
-              <span class="logo__text text--blue"> Web</span>
-              <span class="logo__text text--dark"> Studio</span>
-            </a>
-            <button class="burger--menu__btn" burger-menu-close>
-              <svg class="icon menu--icon">
-                <use
-                  href="./images/common/icons/social-icons.svg#menu-close"
-                ></use>
+
+        <form class="footer__item--form">
+          <label class="footer_block_title" for="email"
+            >Подпишитесь на рассылку</label
+          >
+          <div class="footer__form__content">
+            <input
+              class="footer__form__input--mail"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+
+            <button class="button--subscribe centered" type="submit">
+              <span class="button__text">Подписаться</span>
+              <svg class="icon button__icon">
+                <use href="./images/common/icons/social-icons.svg#send"></use>
               </svg>
             </button>
           </div>
-          <nav class="header_navigation">
-            <a href="#" class="header__navigation__link current">
-              <span>Студия</span>
-            </a>
-            <a href="#" class="header__navigation__link">
-              <span>Портфолио</span>
-            </a>
-            <a href="#" class="header__navigation__link">
-              <span>Контакты</span>
-            </a>
-          </nav>
-          <ul class="header_contacts">
-            <li class="header__contacts__link">
-              <a href="#" class="link--grey centered">
-                <svg class="icon header__contacts__icon">
-                  <use
-                    href="./images/common/icons/social-icons.svg#envelope"
-                  ></use>
-                </svg>
-                <span> info@devstudio.com </span>
-              </a>
-            </li>
-            <li class="header__contacts__link">
-              <a href="#" class="link--grey centered">
-                <svg class="icon header__contacts__icon">
-                  <use
-                    href="./images/common/icons/social-icons.svg#smartphone"
-                  ></use>
-                </svg>
-                <span> +38 096 111 11 11 </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <!-- <span>E-mail</span> -->
+        </form>
       </div>
-    </header>
+    </footer>
     <script src="./js/script.js"></script>
     <script src="./js/my_burger_script.js"></script>
   </body>

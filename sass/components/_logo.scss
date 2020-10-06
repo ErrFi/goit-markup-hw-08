@@ -56,9 +56,3 @@
 .text--invisible {
   color: transparent;
 }
-
-.logo--footer {
-  // .header .logo
-  @include CenteredFlex();
-  margin-right: 93px;
-}
