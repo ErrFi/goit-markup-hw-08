@@ -34,7 +34,25 @@
   font-style: normal;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -42,26 +60,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -113,6 +131,275 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+/*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/* Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent;
+}
+
+/* Remove the underline decoration */
+a {
+  text-decoration: none;
+}
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 .list_social {
@@ -130,7 +417,25 @@
   width: 20px;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -138,26 +443,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -229,53 +534,53 @@
   }
 }
 
-.grid__item--client {
+.client {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 479px) {
-  .grid__item--client {
+  .client {
     width: 100%;
     margin: 0px;
   }
-  .grid__item--client:not(:last-child) {
+  .client:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .grid__item--client {
+  .client {
     width: calc((100% - 1 * 30px) / 2);
   }
-  .grid__item--client:not(:nth-child(2n)) {
+  .client:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .grid__item--client:nth-child(-n + 4) {
+  .client:nth-child(-n + 4) {
     margin-bottom: calc(30px);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .grid__item--client {
+  .client {
     width: calc((100% - 2 * 30px) / 3);
     margin-bottom: 30px;
   }
-  .grid__item--client:not(:nth-child(3n)) {
+  .client:not(:nth-child(3n)) {
     margin-right: 30px;
   }
-  .grid__item--client:nth-child(-n + 3) {
+  .client:nth-child(-n + 3) {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1600px) {
-  .grid__item--client {
+  .client {
     width: calc((100% - 5 * 30px) / 6);
     margin-bottom: 0px;
   }
-  .grid__item--client:not(:nth-child(6n)) {
+  .client:not(:nth-child(6n)) {
     margin-right: 30px;
   }
 }
@@ -331,7 +636,25 @@
   color: #757575;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -339,26 +662,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -460,7 +783,13 @@
 }
 
 .team__member__pict {
+  width: 100%;
   margin-bottom: 30px;
+}
+
+.team__member__image {
+  width: 100%;
+  height: auto;
 }
 
 .member-name {
@@ -489,7 +818,25 @@
   color: #757575;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -497,26 +844,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -607,15 +954,33 @@
 }
 
 .grid__item--directions:nth-child(1) {
-  background-image: url(../images/studio/directions/DsktopApps.jpg);
+  background-image: url("../images/directions/DsktopApps@x1@370.jpg");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .grid__item--directions:nth-child(1) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/directions/DsktopApps@x2@370.jpg");
+  }
 }
 
 .grid__item--directions:nth-child(2) {
-  background-image: url(../images/studio/directions/MobileApps.jpg);
+  background-image: url("../images/directions/MobileApps@x1@370.jpg");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .grid__item--directions:nth-child(2) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/directions/MobileApps@x2@370.jpg");
+  }
 }
 
 .grid__item--directions:nth-child(3) {
-  background-image: url(../images/studio/directions/DesignSolutions.jpg);
+  background-image: url("../images/directions/DesignSolutions@x1@370.jpg");
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .grid__item--directions:nth-child(3) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/directions/DesignSolutions@x2@370.jpg");
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -667,7 +1032,25 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -675,26 +1058,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -746,6 +1129,12 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -841,7 +1230,25 @@
   color: #757575;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -849,26 +1256,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -920,6 +1327,12 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 .hero {
@@ -933,7 +1346,8 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/studio/hero/header_mobile.jpg");
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
   background-color: #2f303a;
 }
 
@@ -941,8 +1355,13 @@
   .container__hero {
     width: 100%;
     height: 400px;
-    background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/studio/hero/header_mobile.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
+  }
+}
+
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@480.jpg");
   }
 }
 
@@ -950,7 +1369,13 @@
   .container__hero {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/studio/hero/header_mobile.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@480.jpg");
   }
 }
 
@@ -958,7 +1383,13 @@
   .container__hero {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/studio/hero/header_tablet.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@768.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@768.jpg");
   }
 }
 
@@ -966,7 +1397,13 @@
   .container__hero {
     width: 100%;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/studio/hero/header_desktop.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@1600.jpg");
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@1600.jpg");
   }
 }
 
@@ -977,7 +1414,93 @@
   width: 100%;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+.container__hero__test {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
+  background-color: #2f303a;
+}
+
+@media (max-width: 479px) {
+  .container__hero__test {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
+  }
+}
+
+@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+  .container__hero__test {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@480.jpg");
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container__hero__test {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@480.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .container__hero__test {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@480.jpg");
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .container__hero__test {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@768.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
+  .container__hero__test {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@768.jpg");
+  }
+}
+
+@media (min-width: 1600px) {
+  .container__hero__test {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x1@1600.jpg");
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .container__hero__test {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/hero@x2@1600.jpg");
+  }
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -985,26 +1508,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -1056,6 +1579,12 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 .header {
@@ -1082,7 +1611,7 @@
   }
 }
 
-.container__header {
+.header__container {
   min-width: calc(320px - 1rem);
   position: relative;
   margin: 0 auto;
@@ -1092,7 +1621,7 @@
 }
 
 @media (max-width: 479px) {
-  .container__header {
+  .header__container {
     width: 100%;
     padding: 0px 1rem;
     height: 60px;
@@ -1101,7 +1630,7 @@
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__header {
+  .header__container {
     width: 100%;
     padding: 0px 1rem;
     height: 60px;
@@ -1110,28 +1639,21 @@
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__header {
-    width: calc($width_tablet-1rem);
+  .header__container {
+    max-width: 768px;
+    width: 100%;
     height: 80px;
     padding: 0px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__header {
-    width: calc($width_desktop-1rem);
+  .header__container {
+    max-width: 1600px;
+    width: 100%;
     height: 80px;
     padding: 0px 215px;
   }
-}
-
-.container--logo {
-  height: 100%;
-}
-
-.logo--header {
-  height: 100%;
-  flex-grow: 0;
 }
 
 .menu {
@@ -1467,6 +1989,12 @@
   height: 100%;
 }
 
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Bold.ttf") format("truetype");
@@ -1502,6 +2030,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.logo--header {
+  height: 100%;
+  flex-grow: 0;
+}
+
 .logo__text {
   margin: 0px;
   padding: 0px;
@@ -1526,7 +2059,25 @@
   color: transparent;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -1534,26 +2085,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -1605,6 +2156,12 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 .footer {
@@ -1873,6 +2430,7 @@
 .footer__form__input--mail {
   height: 50px;
   width: 100%;
+  margin: 0px 0px 20px;
   padding: 15px;
   font-weight: normal;
   font-size: 16px;
@@ -1889,7 +2447,7 @@
 @media (min-width: 1600px) {
   .footer__form__input--mail {
     width: 358px;
-    margin-right: 12px;
+    margin: 0px 12px 0px 0px;
   }
 }
 
@@ -1933,7 +2491,25 @@
   font-style: normal;
 }
 
-.container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}
+
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -1941,26 +2517,26 @@
 }
 
 @media (max-width: 479px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container__clients, .container__team, .container__directions, .container__features, .container__hero, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .container__portfolio {
     max-width: 1600px;
     padding: 94px 215px;
   }
@@ -2012,6 +2588,12 @@
 .client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
+}
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
 }
 
 .portfolio {
@@ -2616,10 +3198,17 @@ h1 {
   }
 }
 
+picture {
+  max-width: 100%;
+  height: auto;
+}
+
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
+  outline: 1px solid red;
 }
 
 .icon {

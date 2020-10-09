@@ -33,3 +33,9 @@ $width_button: 200px;
 
 $duration_transition: 1s;
 $transition-common: $duration_transition cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+  --width_desktop: $width_desktop;
+  --width_tablet: $width_tablet;
+  --width_mobile: $width_mobile;
+}

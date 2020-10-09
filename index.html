@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
     <!-- == Header & Navigation  ================= -->
-    <!-- == Header & Navigation  ================= -->
     <header class="header">
-      <div class="container__header">
+      <div class="header__container">
         <!-- =======logo======= -->
         <a href="./index.html" class="logo logo--header">
           <!-- <span class="button__label text--invisible">.</span> -->
@@ -60,7 +60,6 @@
         <div class="menu--mobile is-hidden--menu" burger-menu>
           <div class="menu--mobile__top-row">
             <a href="#" class="logo logo--header">
-              <!-- <span class="button__label text--invisible">.</span> -->
               <span class="logo__text text--blue"> Web</span>
               <span class="logo__text text--dark"> Studio</span>
             </a>
@@ -109,7 +108,6 @@
       </div>
     </header>
     <!-- == Hero  ================= -->
-    <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
     <div class="hero">
       <div class="container__hero">
         <div class="hero-content">
@@ -117,9 +115,6 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <!-- <a class="button" href="#">
-            <span class="text"> Заказать услугу </span>
-          </a> -->
           <button class="button__hero btn" data-modal-open>
             <span class="text"> Заказать услугу </span>
           </button>
@@ -155,7 +150,6 @@
                   href="./images/studio/features/features-icons.svg#clock"
                 ></use>
               </svg>
-              <!-- <span>Пунктуальность</span> -->
             </div>
             <h3 class="feature__label">Пунктуальность</h3>
             <p class="feature__description">
@@ -170,7 +164,6 @@
                   href="./images/studio/features/features-icons.svg#diagram"
                 ></use>
               </svg>
-              <!-- <span>Планирование</span> -->
             </div>
             <h3 class="feature__label">Планирование</h3>
             <p class="feature__description">
@@ -185,7 +178,6 @@
                   href="./images/studio/features/features-icons.svg#astronaut"
                 ></use>
               </svg>
-              <!-- <span>Современные технологии</span> -->
             </div>
             <h3 class="feature__label">Современные технологии</h3>
             <p class="feature__description">
@@ -229,11 +221,40 @@
         </h2>
         <ul class="list grid">
           <li class="grid__item grid__item--team">
-            <img
-              class="team__member__pict"
-              src="./images/studio/team/ProDes.jpg"
-              alt="Игорь Демьяненко"
-            />
+            <picture class="team__member__pict">
+              <source
+                srcset="
+                  ./images/team/tm1_product-designer@x1@450.jpg 1x,
+                  ./images/team/tm1_product-designer@x2@450.jpg 2x
+                "
+                media="(max-width: 449px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm1_product-designer@x1@354.jpg 1x,
+                  ./images/team/tm1_product-designer@x2@354.jpg 2x
+                "
+                media="(max-width: 1599px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm1_product-designer@x1@270.jpg 1x,
+                  ./images/team/tm1_product-designer@x2@270.jpg 2x
+                "
+                media="(min-width: 1600px)"
+              />
+
+              <img
+                class="t_image"
+                alt="Игорь Демьяненко"
+                src="./images/team/tm1_product-designer@x1@450.jpg"
+                srcset="
+                  ./images/team/tm1_product-designer@x1@450.jpg 1x,
+                  ./images/team/tm1_product-designer@x2@450.jpg 2x
+                "
+              />
+            </picture>
+
             <h3 class="member-name">Игорь Демьяненко</h3>
             <p class="member-position">Product Designer</p>
             <div class="team__member__socials">
@@ -278,11 +299,44 @@
             </div>
           </li>
           <li class="grid__item grid__item--team">
-            <img
+            <!-- <img
               class="team__member__pict"
               src="./images/studio/team/FroDev.jpg"
               alt="Ольга Репина"
-            />
+            /> -->
+            <picture class="team__member__pict">
+              <source
+                srcset="
+                  ./images/team/tm2_frontend-developer@x1@450.jpg 1x,
+                  ./images/team/tm2_frontend-developer@x2@450.jpg 2x
+                "
+                media="(max-width: 449px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm2_frontend-developer@x1@354.jpg 1x,
+                  ./images/team/tm2_frontend-developer@x2@354.jpg 2x
+                "
+                media="(max-width: 1599px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm2_frontend-developer@x1@270.jpg 1x,
+                  ./images/team/tm2_frontend-developer@x2@270.jpg 2x
+                "
+                media="(min-width: 1600px)"
+              />
+
+              <img
+                class="t_image"
+                alt="Ольга Репина"
+                src="./images/team/tm2_frontend-developer@x1@450.jpg"
+                srcset="
+                  ./images/team/tm2_frontend-developer@x1@450.jpg 1x,
+                  ./images/team/tm2_frontend-developer@x2@450.jpg 2x
+                "
+              />
+            </picture>
             <h3 class="member-name">Ольга Репина</h3>
             <p class="member-position">Frontend Developer</p>
             <div class="team__member__socials">
@@ -327,11 +381,44 @@
             </div>
           </li>
           <li class="grid__item grid__item--team">
-            <img
+            <!-- <img
               class="team__member__pict"
               src="./images/studio/team/Marketing.jpg"
               alt="Николай Тарасов"
-            />
+            /> -->
+            <picture class="team__member__pict">
+              <source
+                srcset="
+                  ./images/team/tm3_marketing@x1@450.jpg 1x,
+                  ./images/team/tm3_marketing@x2@450.jpg 2x
+                "
+                media="(max-width: 449px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm3_marketing@x1@354.jpg 1x,
+                  ./images/team/tm3_marketing@x2@354.jpg 2x
+                "
+                media="(max-width: 1599px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm3_marketing@x1@270.jpg 1x,
+                  ./images/team/tm3_marketing@x2@270.jpg 2x
+                "
+                media="(min-width: 1600px)"
+              />
+
+              <img
+                class="t_image"
+                alt="Николай Тарасов"
+                src="./images/team/tm3_marketing@x1@450.jpg"
+                srcset="
+                  ./images/team/tm3_marketing@x1@450.jpg 1x,
+                  ./images/team/tm3_marketing@x2@450.jpg 2x
+                "
+              />
+            </picture>
             <h3 class="member-name">Николай Тарасов</h3>
             <p class="member-position">Marketing</p>
             <div class="team__member__socials">
@@ -376,11 +463,44 @@
             </div>
           </li>
           <li class="grid__item grid__item--team">
-            <img
+            <!-- <img
               class="team__member__pict"
               src="./images/studio/team/UIDes.jpg"
               alt="Михаил Ермаков"
-            />
+            /> -->
+            <picture class="team__member__pict">
+              <source
+                srcset="
+                  ./images/team/tm4_ui-designer@x1@450.jpg 1x,
+                  ./images/team/tm4_ui-designer@x2@450.jpg 2x
+                "
+                media="(max-width: 449px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm4_ui-designer@x1@354.jpg 1x,
+                  ./images/team/tm4_ui-designer@x2@354.jpg 2x
+                "
+                media="(max-width: 1599px)"
+              />
+              <source
+                srcset="
+                  ./images/team/tm4_ui-designer@x1@270.jpg 1x,
+                  ./images/team/tm4_ui-designer@x2@270.jpg 2x
+                "
+                media="(min-width: 1600px)"
+              />
+
+              <img
+                class="t_image"
+                alt="Михаил Ермаков"
+                src="./images/team/tm4_ui-designer@x1@450.jpg"
+                srcset="
+                  ./images/team/tm4_ui-designer@x1@450.jpg 1x,
+                  ./images/team/tm4_ui-designer@x2@450.jpg 2x
+                "
+              />
+            </picture>
             <h3 class="member-name">Михаил Ермаков</h3>
             <p class="member-position">UI Designer</p>
             <div class="team__member__socials">
@@ -429,13 +549,13 @@
     </section>
     <!-- === Clients ============= -->
     <section class="clients">
-      <div class="container__clients">
+      <div class="clients__container">
         <h2 class="section_title">
           <span>Постоянные клиенты</span>
         </h2>
         <ul class="list grid">
           <!-- === client 1 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -452,7 +572,7 @@
             </p>
           </li>
           <!-- === client 2 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -469,7 +589,7 @@
             </p>
           </li>
           <!-- === client 3 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -486,7 +606,7 @@
             </p>
           </li>
           <!-- === client 4 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -503,7 +623,7 @@
             </p>
           </li>
           <!-- === client 5 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -520,7 +640,7 @@
             </p>
           </li>
           <!-- === client 5 ====== -->
-          <li class="grid__item grid__item--client">
+          <li class="grid__item client">
             <a href="#" class="client__link client__icon-container">
               <svg class="client__icon">
                 <use
@@ -648,7 +768,6 @@
     </footer>
     <!-- === Modal =================> -->
     <div class="backdrop is-hidden" data-modal>
-      <!-- <div class="backdrop is-hidden" data-modal> -->
       <form class="form modal">
         <button class="btn-close" data-modal-close>
           <svg class="icon form__icon">
@@ -711,8 +830,6 @@
           </label>
         </div>
         <button class="modal__form__button" type="submit">Отправить</button>
-        <!-- <button type="submit"></button> -->
-        <!-- <input type="button" value=""> -->
       </form>
     </div>
     <script src="./js/script.js"></script>

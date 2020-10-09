@@ -28,3 +28,27 @@
   align-items: center;
   justify-content: center;
 }
+@mixin for-size-n-res($range) {
+  $mobile: $width_mobile;
+  $tablet: $width_tablet;
+  $desktop: $width_desktop;
+
+  @if $range == mobile-only {
+    @media (max-width: #{$mobile - 1}) {
+      @content;
+    }
+  } @else if $range == mobile {
+    @media (min-width: $mobile) and (max-width: #{$tablet - 1}) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: $tablet) and (max-width: #{$desktop - 1}) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+/////screen and (min-device-pixel-ratio: 1)

@@ -4,116 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test page</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
-    <!-- ===== footer: contacts, social links & subscribe ====== -->
-    <footer class="footer">
-      <div class="container__footer">
-        <div class="footer__contacts">
-          <address class="footer__item--addr" id="contacts">
-            <ul class="list" id="contacts">
-              <!-- logo -->
-              <li class="list_item footer__addr-item logo--footer">
-                <a href="#" class="logo logo--footer">
-                  <!-- <span class="button__label text--invisible">.</span> -->
-                  <span class="logo__text text--blue"> Web</span>
-                  <span class="logo__text text--light"> Studio</span>
-                </a>
-              </li>
-              <!-- address -->
-              <li class="footer__addr-item">
-                <a class="footer__addr__link" href="./index.html">
-                  <span class="addr-text">г. Киев, пр-т Леси Украинки, 26</span>
-                </a>
-              </li>
-              <!-- e-mail -->
-              <li class="footer__addr-item">
-                <a class="footer__addr__link" href="./index.html">
-                  <span class="addr-text">info@example.com</span>
-                </a>
-              </li>
-              <!-- phone -->
-              <li class="footer__addr-item">
-                <a class="footer__addr__link" href="./index.html">
-                  <span class="addr-text">+38 099 111 11 11</span>
-                </a>
-              </li>
-            </ul>
-          </address>
-          <div class="footer__item--social">
-            <h3 class="footer_block_title">присоединяйтесь</h3>
-            <div class="footer__socials">
-              <ul class="list list_social">
-                <li class="list_item list_item--socials">
-                  <a
-                    href="./index.html"
-                    class="link_social footer__link--social"
-                  >
-                    <svg class="icon social_icon">
-                      <use
-                        href="./images/common/icons/social-icons.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="list_item list_item--socials">
-                  <a href="#" class="link_social footer__link--social">
-                    <svg class="icon social_icon">
-                      <use
-                        href="./images/common/icons/social-icons.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="list_item list_item--socials">
-                  <a href="#" class="link_social footer__link--social">
-                    <svg class="icon social_icon">
-                      <use
-                        href="./images/common/icons/social-icons.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="list_item list_item--socials">
-                  <a href="#" class="link_social footer__link--social">
-                    <svg class="icon social_icon">
-                      <use
-                        href="./images/common/icons/social-icons.svg#linkedin"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <!-- == Hero  ================= -->
+    <!-- блок-герой з головним заголовком(гаслом) та картинкою  -->
+    <div class="hero">
+      <div class="container__hero__test">
+        <div class="hero-content">
+          <h1 class="h1">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <!-- <a class="button" href="#">
+            <span class="text"> Заказать услугу </span>
+          </a> -->
+          <button class="button__hero btn" data-modal-open>
+            <span class="text"> Заказать услугу </span>
+          </button>
         </div>
-
-        <form class="footer__item--form">
-          <label class="footer_block_title" for="email"
-            >Подпишитесь на рассылку</label
-          >
-          <div class="footer__form__content">
-            <input
-              class="footer__form__input--mail"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-
-            <button class="button--subscribe centered" type="submit">
-              <span class="button__text">Подписаться</span>
-              <svg class="icon button__icon">
-                <use href="./images/common/icons/social-icons.svg#send"></use>
-              </svg>
-            </button>
-          </div>
-          <!-- <span>E-mail</span> -->
-        </form>
       </div>
-    </footer>
-    <script src="./js/script.js"></script>
-    <script src="./js/my_burger_script.js"></script>
+    </div>
   </body>
 </html>

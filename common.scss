@@ -2,6 +2,7 @@
 @import "./sass/utils/variables";
 @import "./sass/utils/placeholders";
 @import "./sass/utils/mixins";
+@import "./sass/utils/modern_normalize";
 @import "./sass/components/socials";
 @import "./sass/components/clients";
 @import "./sass/components/team";
@@ -72,10 +73,17 @@ h1 {
     /* or 136% */
   }
 }
+picture {
+  max-width: 100%;
+  height: auto;
+}
+
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
+  outline: 1px solid red;
 }
 .icon {
   //   display: inline-block;

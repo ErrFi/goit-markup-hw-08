@@ -52,7 +52,12 @@
 //   }
 // }
 .team__member__pict {
+  width: 100%;
   margin-bottom: 30px;
+}
+.team__member__image {
+  width: 100%;
+  height: auto;
 }
 .member-name {
   width: 100%;
@@ -81,3 +86,4 @@
 
   color: #757575;
 }
+// =============
