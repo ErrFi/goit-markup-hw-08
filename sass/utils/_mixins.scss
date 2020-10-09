@@ -22,11 +22,16 @@
     }
   }
 }
-@mixin CenteredFlex($type: flex, $wrap: nowrap) {
+@mixin CenteredFlex(
+  $type: flex,
+  $wrap: nowrap,
+  $align: center,
+  $justify: center
+) {
   display: $type;
   flex-wrap: $wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: $align;
+  justify-content: $justify;
 }
 @mixin for-size-n-res($range) {
   $mobile: $width_mobile;

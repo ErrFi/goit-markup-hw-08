@@ -73,11 +73,20 @@ h1 {
     /* or 136% */
   }
 }
+p {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+figure {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
 picture {
   max-width: 100%;
   height: auto;
 }
-
 img {
   display: block;
   max-width: 100%;
