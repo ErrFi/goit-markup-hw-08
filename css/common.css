@@ -52,7 +52,7 @@
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -60,44 +60,44 @@
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -112,23 +112,23 @@
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -435,7 +435,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -443,44 +443,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -495,23 +495,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -654,7 +654,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -662,44 +662,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -714,23 +714,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -836,7 +836,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -844,44 +844,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -896,23 +896,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1050,7 +1050,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -1058,44 +1058,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -1110,23 +1110,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1248,7 +1248,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -1256,44 +1256,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -1308,23 +1308,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1500,7 +1500,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -1508,44 +1508,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -1560,23 +1560,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1595,7 +1595,6 @@ summary {
 
 @media (max-width: 479px) {
   .header {
-    width: calc(100% - 16px);
     position: fixed;
     z-index: 2;
     top: 0rem;
@@ -1604,7 +1603,6 @@ summary {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .header {
-    width: calc(100% - 16px);
     position: fixed;
     z-index: 2;
     top: 0rem;
@@ -1613,6 +1611,7 @@ summary {
 
 .header__container {
   min-width: calc(320px - 1rem);
+  width: 100%;
   position: relative;
   margin: 0 auto;
   display: flex;
@@ -2077,7 +2076,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -2085,44 +2084,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -2137,23 +2136,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -2509,7 +2508,7 @@ summary {
   --width_mobile: $width_mobile;
 }
 
-.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+.clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
   min-width: calc(320px - 1rem);
   width: 100%;
   margin: 0 auto;
@@ -2517,44 +2516,44 @@ summary {
 }
 
 @media (max-width: 479px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 768px;
     padding: 60px 15px;
   }
 }
 
 @media (min-width: 1600px) {
-  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container, .container__portfolio {
+  .clients__container, .container__team, .container__directions, .container__features, .container__hero, .container__hero__test, .portfolio__container {
     max-width: 1600px;
     padding: 94px 215px;
   }
 }
 
-.grid--filters, .header_contacts {
+.filters__grid, .header_contacts {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.grid--filters {
+.filters__grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.button__hero, .button--subscribe, .button__portfolio--filter, .modal__form__button, .button--my, .button--my2 {
+.button__hero, .button--subscribe, .filters__button, .modal__form__button, .button--my, .button--my2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -2569,23 +2568,23 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__hero:hover, .button--subscribe:hover, .button__portfolio--filter:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
+.button__hero:hover, .button--subscribe:hover, .filters__button:hover, .modal__form__button:hover, .button--my:hover, .button--my2:hover {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .button__portfolio--filter, .link, .link_social {
+.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .button__portfolio--filter:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .button__portfolio--filter:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.button__portfolio--filter, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -2613,38 +2612,30 @@ summary {
   }
 }
 
-.portfolio__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  outline: 1px solid red;
-}
-
-.grid--filters {
+.filters__grid {
   justify-content: center;
 }
 
 @media (max-width: 479px) {
-  .grid--filters {
+  .filters__grid {
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .grid--filters {
+  .filters__grid {
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1599px) {
-  .grid--filters {
+  .filters__grid {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1600px) {
-  .grid--filters {
+  .filters__grid {
     margin-bottom: 50px;
   }
 }
@@ -2653,7 +2644,7 @@ summary {
   margin-right: 8px;
 }
 
-.button__portfolio--filter {
+.filters__button {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -2671,181 +2662,19 @@ summary {
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__portfolio--filter:hover {
+.filters__button:hover {
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.grid--galery {
-  justify-content: center;
-}
-
-@media (min-width: 768px) and (max-width: 1599px) {
-  .grid--galery {
-    justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1600px) {
-  .grid--galery {
-    justify-content: flex-start;
-  }
-}
-
-.grid__item--galery {
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-  height: 404px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-@media (max-width: 479px) {
-  .grid__item--galery {
-    width: 450px;
-    margin: 0px;
-  }
-  .grid__item--galery:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .grid__item--galery {
-    width: 100%;
-    margin: 0px auto;
-  }
-  .grid__item--galery:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1599px) {
-  .grid__item--galery {
-    width: calc((100% - 1 * 30px) / 2);
-    margin-bottom: 30px;
-  }
-  .grid__item--galery:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .grid__item--galery:nth-child(-n + 8) {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .grid__item--galery {
-    width: calc((100% - 2 * 30px) / 3);
-    margin-bottom: 0px;
-  }
-  .grid__item--galery:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-  .grid__item--galery:nth-child(-n + 6) {
-    margin-bottom: 30px;
-  }
-}
-
-.item__description__container {
-  position: absolute;
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  z-index: 2;
-  bottom: 0px;
-  left: 0px;
-  padding: 20px 24px;
-  background-color: #ffffff;
-  border: none;
-}
-
-.item__title {
-  margin-top: 0px;
-  margin-bottom: 4px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  color: #212121;
-}
-
-@media (min-width: 768px) and (max-width: 1599px) {
-  .item__title {
-    font-size: 16px;
-  }
-}
-
-.item__description {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.galery__item__overlay {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transform: translatey(100%);
-  height: 294px;
-  padding: 63px 24px;
-  background: rgba(33, 150, 243, 0.9);
-  transition-property: transform;
-  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.grid__item--galery:hover .galery__item__overlay {
-  transform: translatey(0);
-}
-
-.item__overlay__text {
   margin: 0px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-/* ================================== */
-.grid__item--galery:nth-child(1) {
-  background-image: url("../images/portfolio/Technokryak.jpg");
-}
-
-.grid__item--galery:nth-child(2) {
-  background-image: url("../images/portfolio/NewOrlean-vs-GoldenStar.jpg");
-}
-
-.grid__item--galery:nth-child(3) {
-  background-image: url("../images/portfolio/Seafood.jpg");
-}
-
-.grid__item--galery:nth-child(4) {
-  background-image: url("../images/portfolio/Project-Prime.jpg");
-}
-
-.grid__item--galery:nth-child(5) {
-  background-image: url("../images/portfolio/Project-Boxes.jpg");
-}
-
-.grid__item--galery:nth-child(6) {
-  background-image: url("../images/portfolio/Inspiration-has-no-Borders.jpg");
-}
-
-.grid__item--galery:nth-child(7) {
-  background-image: url("../images/portfolio/Limited-Edition.jpg");
-}
-
-.grid__item--galery:nth-child(8) {
-  background-image: url("../images/portfolio/Project-LAB.jpg");
-}
-
-.grid__item--galery:nth-child(9) {
-  background-image: url("../images/portfolio/Growing-Business.jpg");
+  padding: 0px;
 }
 
 .galery__item {
@@ -2934,6 +2763,15 @@ summary {
 .item__overlay__text {
   display: block;
   width: 100%;
+  margin: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 156%;
+  /* or 28px */
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .item__capture {
@@ -2947,11 +2785,26 @@ summary {
   display: block;
   width: 100%;
   margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 200%;
+  color: #212121;
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+  .item__title {
+    font-size: 16px;
+  }
 }
 
 .item__type {
   display: block;
   width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 /* ======= Backdrop with form ======= */
@@ -3332,7 +3185,6 @@ img {
   max-width: 100%;
   width: 100%;
   height: auto;
-  outline: 1px solid red;
 }
 
 .icon {

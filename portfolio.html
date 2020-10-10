@@ -109,121 +109,448 @@
     </header>
     <!-- =========================== -->
     <section class="portfolio">
-      <div class="container__portfolio">
-        <ul class="grid--filters">
+      <div class="portfolio__container">
+        <ul class="filters__grid">
           <li class="filters__item">
-            <a href="#" class="button__portfolio--filter">
+            <a href="#" class="filters__button">
               <span class="text">Все</span>
             </a>
           </li>
           <li class="filters__item">
-            <a href="#" class="button__portfolio--filter">
+            <a href="#" class="filters__button">
               <span class="text">Веб-сайты</span>
             </a>
           </li>
           <li class="filters__item">
-            <a href="#" class="button__portfolio--filter">
+            <a href="#" class="filters__button">
               <span class="text">Приложения</span>
             </a>
           </li>
           <li class="filters__item">
-            <a href="#" class="button__portfolio--filter">
+            <a href="#" class="filters__button">
               <span class="text">Приложения</span>
             </a>
           </li>
           <li class="filters__item">
-            <a href="#" class="button__portfolio--filter">
+            <a href="#" class="filters__button">
               <span class="text">Приложения</span>
             </a>
           </li>
         </ul>
-        <ul class="grid grid--galery">
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">
-                Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
-              </p>
+        <div class="galery">
+          <!-- ------Технокряк------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi1_technokryak@x1@450.jpg 1x,
+                    ./images/portfolio/pi1_technokryak@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi1_technokryak@x1@354.jpg 1x,
+                    ./images/portfolio/pi1_technokryak@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi1_technokryak@x1@370.jpg 1x,
+                    ./images/portfolio/pi1_technokryak@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Технокряк"
+                  src="./images/portfolio/pi1_technokryak@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi1_technokryak@x1@450.jpg 1x,
+                    ./images/portfolio/pi1_technokryak@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">
+                  Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.
+                </p>
+              </div>
             </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Технокряк</h3>
-              <p class="item__description">Веб-сайт</p>
+              <p class="item__type">Веб-сайт</p>
+            </figcaption>
+          </figure>
+          <!-- ------Постер New Orlean vs Golden Star------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi2_poster@x1@450.jpg 1x,
+                    ./images/portfolio/pi2_poster@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi2_poster@x1@354.jpg 1x,
+                    ./images/portfolio/pi2_poster@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi2_poster@x1@370.jpg 1x,
+                    ./images/portfolio/pi2_poster@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Постер New Orlean vs Golden Star"
+                  src="./images/portfolio/pi2_poster@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi2_poster@x1@450.jpg 1x,
+                    ./images/portfolio/pi2_poster@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">
+                  Постер New Orlean vs Golden Star
+                </p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery galery-item">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Постер New Orlean vs Golden Star</h3>
-              <p class="item__description">Дизайн</p>
+              <p class="item__type">Дизайн</p>
+            </figcaption>
+          </figure>
+          <!-- ------Ресторан Seafood------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi3_seafood@x1@450.jpg 1x,
+                    ./images/portfolio/pi3_seafood@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi3_seafood@x1@354.jpg 1x,
+                    ./images/portfolio/pi3_seafood@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi3_seafood@x1@370.jpg 1x,
+                    ./images/portfolio/pi3_seafood@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Ресторан Seafood"
+                  src="./images/portfolio/pi3_seafood@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi3_seafood@x1@450.jpg 1x,
+                    ./images/portfolio/pi3_seafood@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Ресторан Seafood</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Ресторан Seafood</h3>
-              <p class="item__description">Приложение</p>
+              <p class="item__type">Приложение</p>
+            </figcaption>
+          </figure>
+          <!-- ------Проект Prime------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi4_project-prime@x1@450.jpg 1x,
+                    ./images/portfolio/pi4_project-prime@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi4_project-prime@x1@354.jpg 1x,
+                    ./images/portfolio/pi4_project-prime@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi4_project-prime@x1@370.jpg 1x,
+                    ./images/portfolio/pi4_project-prime@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Проект Prime"
+                  src="./images/portfolio/pi4_project-prime@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi4_project-prime@x1@450.jpg 1x,
+                    ./images/portfolio/pi4_project-prime@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Проект Prime</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Проект Prime</h3>
-              <p class="item__description">Маркетинг</p>
+              <p class="item__type">Маркетинг</p>
+            </figcaption>
+          </figure>
+          <!-- ------Проект Boxes------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi5_project-boxes@x1@450.jpg 1x,
+                    ./images/portfolio/pi5_project-boxes@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi5_project-boxes@x1@354.jpg 1x,
+                    ./images/portfolio/pi5_project-boxes@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi5_project-boxes@x1@370.jpg 1x,
+                    ./images/portfolio/pi5_project-boxes@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Проект Boxes"
+                  src="./images/portfolio/pi5_project-boxes@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi5_project-boxes@x1@450.jpg 1x,
+                    ./images/portfolio/pi5_project-boxes@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Проект Boxes</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Проект Boxes</h3>
-              <p class="item__description">Приложение</p>
+              <p class="item__type">Приложение</p>
+            </figcaption>
+          </figure>
+          <!-- ------Inspiration has no Borders------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi6_inspiration@x1@450.jpg 1x,
+                    ./images/portfolio/pi6_inspiration@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi6_inspiration@x1@354.jpg 1x,
+                    ./images/portfolio/pi6_inspiration@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi6_inspiration@x1@370.jpg 1x,
+                    ./images/portfolio/pi6_inspiration@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Inspiration has no Borders"
+                  src="./images/portfolio/pi6_inspiration@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi6_inspiration@x1@450.jpg 1x,
+                    ./images/portfolio/pi6_inspiration@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Inspiration has no Borders</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Inspiration has no Borders</h3>
-              <p class="item__description">Веб-сайт</p>
+              <p class="item__type">Веб-сайт</p>
+            </figcaption>
+          </figure>
+          <!-- ------Издание Limited Edition------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi7_limited-edition@x1@450.jpg 1x,
+                    ./images/portfolio/pi7_limited-edition@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi7_limited-edition@x1@354.jpg 1x,
+                    ./images/portfolio/pi7_limited-edition@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi7_limited-edition@x1@370.jpg 1x,
+                    ./images/portfolio/pi7_limited-edition@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Издание Limited Edition"
+                  src="./images/portfolio/pi7_limited-edition@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi7_limited-edition@x1@450.jpg 1x,
+                    ./images/portfolio/pi7_limited-edition@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Издание Limited Edition</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Издание Limited Edition</h3>
-              <p class="item__description">Дизайн</p>
+              <p class="item__type">Дизайн</p>
+            </figcaption>
+          </figure>
+          <!-- ------Проект LAB------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi8_project-lab@x1@450.jpg 1x,
+                    ./images/portfolio/pi8_project-lab@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi8_project-lab@x1@354.jpg 1x,
+                    ./images/portfolio/pi8_project-lab@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi8_project-lab@x1@370.jpg 1x,
+                    ./images/portfolio/pi8_project-lab@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Проект LAB"
+                  src="./images/portfolio/pi8_project-lab@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi8_project-lab@x1@450.jpg 1x,
+                    ./images/portfolio/pi8_project-lab@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Проект LAB</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Проект LAB</h3>
-              <p class="item__description">Маркетинг</p>
+              <p class="item__type">Маркетинг</p>
+            </figcaption>
+          </figure>
+          <!-- ------Growing Business------------- -->
+          <figure class="galery__item">
+            <div class="item__poster">
+              <picture class="item__picture">
+                <source
+                  srcset="
+                    ./images/portfolio/pi9_growing-business@x1@450.jpg 1x,
+                    ./images/portfolio/pi9_growing-business@x2@450.jpg 2x
+                  "
+                  media="(max-width: 449px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi9_growing-business@x1@354.jpg 1x,
+                    ./images/portfolio/pi9_growing-business@x2@354.jpg 2x
+                  "
+                  media="(max-width: 1599px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/pi9_growing-business@x1@370.jpg 1x,
+                    ./images/portfolio/pi9_growing-business@x2@370.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img
+                  class="t_image"
+                  alt="Growing Business"
+                  src="./images/portfolio/pi9_growing-business@x1@450.jpg"
+                  srcset="
+                    ./images/portfolio/pi9_growing-business@x1@450.jpg 1x,
+                    ./images/portfolio/pi9_growing-business@x2@450.jpg 2x
+                  "
+                />
+              </picture>
+              <div class="item__overlay">
+                <p class="item__overlay__text">Growing Business</p>
+              </div>
             </div>
-          </li>
-          <li class="grid__item grid__item--galery">
-            <div class="galery__item__overlay">
-              <p class="item__overlay__text">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="item__description__container">
+            <figcaption class="item__capture">
               <h3 class="item__title">Growing Business</h3>
-              <p class="item__description">Приложение</p>
-            </div>
-          </li>
-        </ul>
+              <p class="item__type">Приложение</p>
+            </figcaption>
+          </figure>
+          <!-- ----------------------- -->
+        </div>
       </div>
     </section>
     <!-- ===== footer: contacts, social links & subscribe ====== -->
