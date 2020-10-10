@@ -1,6 +1,7 @@
 /* ======= Backdrop with form ======= */
 .backdrop {
   position: fixed;
+  z-index: 3;
   top: 0%;
   bottom: 0%;
   left: 0%;
@@ -16,6 +17,7 @@
 }
 .modal {
   position: absolute;
+  // z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -98,13 +100,13 @@
 }
 .field.confirm {
   position: relative;
-  display: inline-block;
+  @include CenteredFlex();
   /* justify-content: center; */
-  height: 24px;
-  width: auto;
+  // height: 24px;
+  width: 100%;
   /* margin: auto; */
   margin-bottom: 30px;
-  padding: 0px 12px;
+  padding: 0px;
   /* outline: 1px solid green; */
   font-family: Roboto;
   font-style: normal;
