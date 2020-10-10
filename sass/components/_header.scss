@@ -259,6 +259,7 @@
   }
 }
 .link--grey {
+  @extend %link;
   text-decoration: none;
   color: $color_text-grey;
   &:visited {

@@ -118,17 +118,19 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -501,17 +503,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -720,17 +724,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -916,17 +922,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1130,17 +1138,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1341,17 +1351,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -1593,17 +1605,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -2169,17 +2183,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
@@ -2601,17 +2617,19 @@ summary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
 }
 
-.client__link, .header__navigation__link, .footer__addr__link, .filters__button, .link, .link_social {
+.client__link, .header__navigation__link, .link--grey, .footer__addr__link, .filters__button, .link, .link_social {
   text-decoration: none;
   color: currentColor;
+  transition-property: color;
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client__link:visited, .header__navigation__link:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
+.client__link:visited, .header__navigation__link:visited, .link--grey:visited, .footer__addr__link:visited, .filters__button:visited, .link:visited, .link_social:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.client__link:hover, .header__navigation__link:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
+.client__link:hover, .header__navigation__link:hover, .link--grey:hover, .footer__addr__link:hover, .filters__button:hover, .link:hover, .link_social:hover, .current.client__link, .current.header__navigation__link, .current.link--grey, .current.footer__addr__link, .current.filters__button, .current.link, .current.link_social {
   text-decoration: none;
   color: #2196f3;
 }
