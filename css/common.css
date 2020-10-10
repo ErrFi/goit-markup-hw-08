@@ -2711,6 +2711,7 @@ summary {
   .galery__item {
     width: calc((100% - 1 * 30px) / 2);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
   .galery__item:nth-child(2n) {
     margin-right: 0px;
@@ -2724,6 +2725,7 @@ summary {
   .galery__item {
     width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
   .galery__item:nth-child(3n) {
     margin-right: 0px;
